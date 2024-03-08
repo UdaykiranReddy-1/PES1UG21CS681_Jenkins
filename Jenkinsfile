@@ -11,14 +11,14 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                echo "This is Test stage." 
-                sh './output'
+                ec "This is Test stage." 
+                s './output'
                 echo "Test Stage Successful"
             }
         }
         stage('Deploy') { 
             steps {
-                echo "This is Deploy stage.
+                echo "This is Deploy stage."
                 echo "Deployment Success"
             }
         }
